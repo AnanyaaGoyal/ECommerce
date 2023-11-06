@@ -1,0 +1,111 @@
+<div class="container col-md-6 offset-md-3 d-flex flex-column justify-content-center cardWrapper">
+    <div class="card">
+        <div class="card-body">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <div class="mb-3">
+                    <label class="form-label">Firstname</label>
+                    <input type="text" class="form-control" placeholder="Enter Firstname" formControlName="firstName"
+                        [ngClass]="{'is-invalid': submitted && f['firstName'].errors}">
+                    <div *ngIf="submitted && f['firstName'].errors">
+                        <span class="text-danger" *ngIf="submitted && f['firstName'].errors['required']">Please enter
+                            FirstName</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Lastname</label>
+                    <input type="text" class="form-control" placeholder="Enter Lastname" formControlName="lastName">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" class="form-control" placeholder="Enter Username" formControlName="username"
+                        [ngClass]="{'is-invalid': submitted && f['username'].errors}">
+                    <div *ngIf="submitted && f['username'].errors">
+                        <span class="text-danger" *ngIf="submitted && f['username'].errors['required']">Please enter
+                            Username</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter Password" formControlName="password"
+                        [ngClass]="{'is-invalid': submitted && f['password'].errors}">
+                    <div *ngIf="submitted && f['password'].errors">
+                        <span class="text-danger" *ngIf="submitted && f['password'].errors['required']">Please enter
+                            Password</span>
+                        <span class="text-danger" *ngIf="submitted && f['password'].errors['minlength']">Password must
+                            be 6 characters long.</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Gender</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" formControlName="gender" name="gender" value="Male"
+                            checked>
+                        <label class="form-check-label" for="Male">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" formControlName="gender" name="gender"
+                            value="Female">
+                        <label class="form-check-label" for="Female">
+                            Female
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" formControlName="gender" name="gender"
+                            value="Other">
+                        <label class="form-check-label" for="Other">
+                            Other
+                        </label>
+                    </div>
+                    <div *ngIf="submitted && f['gender'].errors">
+                        <span class="text-danger" *ngIf="submitted && f['gender'].errors['required']">Please select
+                            Gender</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">BirthDate</label>
+                    <input type="date" class="form-control" formControlName="birthDate"
+                        [ngClass]="{'is-invalid': submitted && f['birthDate'].errors}">
+                    <div *ngIf="submitted && f['birthDate'].errors">
+                        <span class="text-danger" *ngIf="submitted && f['birthDate'].errors['required']">Please select
+                            BirthDate </span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label"> Mobile Number </label>
+                    <input type="text" class="form-control" placeholder="Enter Mobile Number" formControlName="mobileNo"
+                        [ngClass]="{'is-invalid': submitted && f['mobileNo'].errors}">
+                    <div *ngIf="submitted && f['mobileNo'].errors">
+                        <span class="text-danger" *ngIf="submitted && f['mobileNo'].errors['pattern']">Please enter
+                            valid Mobile Number</span>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Role</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" formControlName="role" name="role" value="User"
+                            checked>
+                        <label class="form-check-label" for="User">
+                            User
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" formControlName="role" name="role" value="Admin">
+                        <label class="form-check-label" for="Admin">
+                            Admin
+                        </label>
+                    </div>
+                    <div *ngIf="submitted && f['role'].errors">
+                        <span class="text-danger" *ngIf="submitted && f['role'].errors['required']">Please select
+                            Role</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <button type="submit" class="btn btn-primary mb-2 w-25">Register</button>
+                    <a class="text-center text-decoration-none" routerLink="/"><i class="bi bi-arrow-left me-1"></i>Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

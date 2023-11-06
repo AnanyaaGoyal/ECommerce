@@ -1,0 +1,103 @@
+/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/ngx-toastr/toastr.css";
+
+html,
+body {
+  min-height: 100%;
+}
+
+.boxShadow {
+  box-shadow: 3px 5px 10px #00000014;
+}
+
+.contentWrapper {
+  background-color: whitesmoke;
+}
+
+.cardWrapper {
+  height: 100vh;
+}
+
+.avatar {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.productImg {
+  height: 226px;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  height: 19px;
+  width: 19px;
+  top: 0;
+  right: -7px;
+  opacity: 70%;
+  font-size: small;
+  color: white;
+  text-align: center;
+}
+
+.cartIcon {
+  position: relative;
+}
+
+.cartImage img {
+  height: 206px;
+  width: 250px;
+}
+
+.itemDesc {
+  width: -webkit-fill-available;
+}
+
+.descDiv {
+  height: 40%;
+  width: 100%;
+}
+
+.emptyCartImg {
+  height: -webkit-fill-available;
+  width: 74%;
+}
+
+.emptyCartContainer {
+  /* height: 85vh; */
+}
+
+.orderHeading {
+  border-top: solid 1px black;
+}
+
+.imgContainer img {
+  height: 48px;
+  width: 52px;
+}
+
+.orderImgContainer img {
+  height: 40px;
+  width: 45px;
+}
+
+#idOrderDetailsDialog{
+  min-width: fit-content;
+}
+
+#idOrderDetailsDialog .mat-mdc-dialog-surface.mdc-dialog__surface{
+  background-color: snow !important;
+  width: 130%;
+}
+
+.imgWrapper {
+}
+
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */

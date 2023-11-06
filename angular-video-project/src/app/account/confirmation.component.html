@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="col-md-6 offset-md-3 mt-5">
+        <div class="card">
+            <div class="card-header text-center">
+                Enter OTP here.
+            </div>
+            <div class="card-body text-center">
+                <ng-otp-input [config]="{length:6}" #otp></ng-otp-input>
+                <div class="d-flex justify-content-center mt-3">
+                    <button type="button" class="btn btn-success" (click)="getOtp(otp)">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

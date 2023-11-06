@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "12fa7947-8308-4255-b7a7-2eab2ded581a": {
+      "ProjectGuid": "12fa7947-8308-4255-b7a7-2eab2ded581a",
+      "DisplayName": "AP.Entities",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "0a009f25-a073-4d68-b170-bb02556dab71": {
+      "ProjectGuid": "0a009f25-a073-4d68-b170-bb02556dab71",
+      "DisplayName": "AngularProject",
+      "ColorIndex": 1
+    },
+    "d4f134bf-3c0a-4ae4-9e3a-86542275ced1": {
+      "ProjectGuid": "d4f134bf-3c0a-4ae4-9e3a-86542275ced1",
+      "DisplayName": "AP.Common",
+      "ColorIndex": 2
+    },
+    "753d6b5d-787f-4dc2-b492-bbf21fb083b0": {
+      "ProjectGuid": "753d6b5d-787f-4dc2-b492-bbf21fb083b0",
+      "DisplayName": "AP.Models",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}

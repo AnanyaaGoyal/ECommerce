@@ -1,0 +1,48 @@
+<div>
+    <div class="d-flex justify-content-between p-2 mb-2">
+        <div>
+            <b class="d-flex">Order Id: {{shortOrderId}} - <div class="text-secondary">{{ data.createdDate | date:'y, MMMM d'}}</div></b>
+        </div>
+        <a type="button" class="btn btn-secondary p-1" [href]="data.invoicePdf">Print Invoice</a>
+    </div>
+    <div class="p-3">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>PRODUCT</th>
+                    <th>QUANTITY</th>
+                    <th>AMOUNT</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of data.cartItems">
+                    <td>
+                        <div class="orderImgContainer">
+                            <img src='{{"../../../assets/images/" + item.productDetails.image}}'>
+                        </div>
+                    </td>
+                    <td>
+                        <a>{{item.productDetails.name}}</a>
+                        <div class="text-muted">${{item.productDetails.price}}</div>
+                    </td>
+                    <td>
+                        <div>{{item.quantity}}</div>
+                        <div class="text-muted">Available Stock: {{item.productDetails.quantity}}</div>
+                    </td>
+                    <td>
+                        ${{item.productDetails.price * item.quantity}}
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Order Total</td>
+                    <td>${{data.totalCost}}</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+C:\Users\pct152\source\repos\AP.Common\bin\Debug\net6.0\AP.Common.deps.json
+C:\Users\pct152\source\repos\AP.Common\bin\Debug\net6.0\AP.Common.dll
+C:\Users\pct152\source\repos\AP.Common\bin\Debug\net6.0\ref\AP.Common.dll
+C:\Users\pct152\source\repos\AP.Common\bin\Debug\net6.0\AP.Common.pdb
+C:\Users\pct152\source\repos\AP.Common\obj\Debug\net6.0\AP.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pct152\source\repos\AP.Common\obj\Debug\net6.0\AP.Common.AssemblyInfoInputs.cache
+C:\Users\pct152\source\repos\AP.Common\obj\Debug\net6.0\AP.Common.AssemblyInfo.cs
+C:\Users\pct152\source\repos\AP.Common\obj\Debug\net6.0\AP.Common.csproj.CoreCompileInputs.cache
+C:\Users\pct152\source\repos\AP.Common\obj\Debug\net6.0\AP.Common.dll
+C:\Users\pct152\source\repos\AP.Common\obj\Debug\net6.0\ref\AP.Common.dll
+C:\Users\pct152\source\repos\AP.Common\obj\Debug\net6.0\AP.Common.pdb
+C:\Users\pct152\source\repos\AP.Common\bin\Debug\net6.0\AP.Models.dll
+C:\Users\pct152\source\repos\AP.Common\bin\Debug\net6.0\AP.Models.pdb
+C:\Users\pct152\source\repos\AP.Common\obj\Debug\net6.0\AP.Common.csproj.AssemblyReference.cache
+C:\Users\pct152\source\repos\AP.Common\obj\Debug\net6.0\AP.Common.csproj.CopyComplete

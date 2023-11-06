@@ -1,0 +1,12 @@
+C:\Users\pct152\source\repos\AP.Models\bin\Debug\net6.0\AP.Models.deps.json
+C:\Users\pct152\source\repos\AP.Models\bin\Debug\net6.0\AP.Models.dll
+C:\Users\pct152\source\repos\AP.Models\bin\Debug\net6.0\ref\AP.Models.dll
+C:\Users\pct152\source\repos\AP.Models\bin\Debug\net6.0\AP.Models.pdb
+C:\Users\pct152\source\repos\AP.Models\obj\Debug\net6.0\AP.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pct152\source\repos\AP.Models\obj\Debug\net6.0\AP.Models.AssemblyInfoInputs.cache
+C:\Users\pct152\source\repos\AP.Models\obj\Debug\net6.0\AP.Models.AssemblyInfo.cs
+C:\Users\pct152\source\repos\AP.Models\obj\Debug\net6.0\AP.Models.csproj.CoreCompileInputs.cache
+C:\Users\pct152\source\repos\AP.Models\obj\Debug\net6.0\AP.Models.dll
+C:\Users\pct152\source\repos\AP.Models\obj\Debug\net6.0\ref\AP.Models.dll
+C:\Users\pct152\source\repos\AP.Models\obj\Debug\net6.0\AP.Models.pdb
+C:\Users\pct152\source\repos\AP.Models\obj\Debug\net6.0\AP.Models.csproj.AssemblyReference.cache

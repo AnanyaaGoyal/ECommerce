@@ -1,0 +1,38 @@
+<div class="row border bg-light p-2" [ngSwitch]="order.status">
+    <div class="text-secondary" *ngSwitchCase="'Placed'">
+        <h5>
+            <i class="bi bi-bag-check me-1"></i>Order Placed
+        </h5>
+    </div>
+    <div class="text-secondary" *ngSwitchCase="'Processing'">
+        <h5>
+            <i class="bi bi-arrow-repeat me-1"></i>Processing Order
+        </h5>
+    </div>
+    <div class="text-secondary" *ngSwitchCase="'Out For Delivery'">
+        <h5>
+            <i class="bi bi-truck me-1"></i>Out for delivery
+        </h5>
+    </div>
+    <div class="text-secondary" *ngSwitchCase="'Delivered'">
+        <h5>
+            <i class="bi bi-check-circle-fill me-1"></i>Order Delivered
+        </h5>
+    </div>
+    <div class="text-secondary" *ngSwitchCase="'Shipped'">
+        <h5>
+            <i class="bi bi-suitcase2 me-1"></i>Shipped
+        </h5>
+    </div>
+    <div class="row p-2">
+        <div class="col-5 d-flex imageWrapper">
+            <div *ngFor="let image of order.images" class="imgContainer me-2">
+                <img src='{{"../../../assets/images/" + image}}'>
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-5 d-flex justify-content-end">
+            <button class="btn btn-success" (click)="openDialog(order.sessionId)">View Details<i class="bi bi-arrow-right ms-1"></i></button>
+        </div>
+    </div>
+</div>

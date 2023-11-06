@@ -1,0 +1,13 @@
+<div class="card h-100">
+    <img src='{{"../../../assets/images/" + productData.image}}' class="card-img-top productImg" alt="productImg">
+    <div class="card-body">
+        <h5 class="card-title d-flex justify-content-between align-items-baseline">
+            <div> {{productData.name}} </div>
+            <div>
+                <h6> ${{productData.price}} </h6>
+            </div>
+        </h5>
+        <p class="card-text"> {{shortenDescription(productData.description)}}</p>
+            <a class="btn btn-success w-100" [ngClass]="{'disabled': productData.quantity == 0}" (click)="addToCart(productData.productId)">Add to cart <i class="bi bi-cart-plus ms-2"></i></a>
+    </div>
+</div>

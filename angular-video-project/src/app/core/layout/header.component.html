@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-2 boxShadow mb-2">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item active ms-4 me-2">
+        <a class="nav-link pointer text-dark" routerLink="/products"><i class="bi bi-card-list"></i> Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pointer text-dark" routerLink="/orders/orderlist"><i class="bi bi-box-seam"></i> Orders</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ms-auto px-2 d-flex align-items-center">
+      <li (click)="showCart()">
+        <i class="bi bi-cart4 me-4 fs-3 pointer cartIcon">
+          <div class="circle" *ngIf="cartCount && cartCount > 0"> {{cartCount}} </div>
+        </i>
+      </li>
+      <li>
+        <div class="d-flex align-items-center">
+          <img src="../../../assets/images/default-user.png" class="avatar me-1">
+          <div>{{username}}</div>
+        </div>
+      </li>
+      <li (click)="logout()"><i class="bi bi-box-arrow-right fs-4 ms-3 pointer"></i></li>
+    </ul>
+  </div>
+</nav>
