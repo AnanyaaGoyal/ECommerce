@@ -3,7 +3,12 @@
     <div class="row boxShadow bg-light p-2 orderHeading mb-4">
         <h2>Orders</h2>
     </div>
-    <div *ngFor="let order of orderList" class="mb-3">
-        <app-order [order]="order"></app-order>
+    <div *ngIf="orderCount == 0" class="noOrderImgDiv">
+        <img src="../../../assets/images/no-order.png">
+    </div>
+    <div *ngIf="orderCount > 0">
+        <div *ngFor="let order of orderList" class="mb-3">
+            <app-order [order]="order"></app-order>
+        </div>
     </div>
 </div>

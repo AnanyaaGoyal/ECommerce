@@ -10,6 +10,7 @@ import { OrderService } from "@app/core/_services/order.service";
 
 export class OrderListComponent implements OnInit {
     public orderList!: orderModel[];
+    public orderCount: number = 0;
 
     constructor(private orderService: OrderService,
         private accountService: AccountService) { }
@@ -20,6 +21,7 @@ export class OrderListComponent implements OnInit {
             next: (result) => {
                 if (result.statusCode == 200) {
                     this.orderList = result.dataList;
+                    this.orderCount = this.orderList.length;
                 }
             },
             error: (error) => {

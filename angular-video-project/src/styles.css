@@ -69,10 +69,6 @@ body {
   width: 74%;
 }
 
-.emptyCartContainer {
-  /* height: 85vh; */
-}
-
 .orderHeading {
   border-top: solid 1px black;
 }
@@ -87,17 +83,21 @@ body {
   width: 45px;
 }
 
-#idOrderDetailsDialog{
+#idOrderDetailsDialog {
   min-width: fit-content;
 }
 
-#idOrderDetailsDialog .mat-mdc-dialog-surface.mdc-dialog__surface{
+#idOrderDetailsDialog .mat-mdc-dialog-surface.mdc-dialog__surface {
   background-color: snow !important;
   width: 130%;
 }
 
-.imgWrapper {
+.noOrderImgDiv {
+  text-align: center;
+  height: 75vh;
 }
 
-/* html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+.noOrderImgDiv img {
+  height: 100%;
+}
+

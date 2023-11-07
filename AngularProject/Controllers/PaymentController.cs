@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Stripe.Checkout;
 using System.Net;
-using AP.Entities.ViewModels;
 
 namespace AngularProject.Controllers
 {
@@ -104,7 +103,6 @@ namespace AngularProject.Controllers
                 //change order status and invoice pdf url
                 var order = _context.Orders.FirstOrDefault(o => o.SessionId == sessionId);
                 order.Status = "Placed";
-                //order.InvoicePdf = invoiceDetails.InvoicePdf;
                 order.InvoicePdf = invoiceDetails.HostedInvoiceUrl;
 
 

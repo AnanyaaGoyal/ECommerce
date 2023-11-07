@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "313U7k1xyzFdtYHefnFr+iOGsq+5Sv1fcpPwL+mDOJA=",
+  "Hash": "tLxIkgm7DNxIG8/FtvDpNbdnrfuAI9Kxe2O+qFuT3PE=",
   "Source": "AngularProject",
   "BasePath": "_content/AngularProject",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AngularProject\\wwwroot",
       "Source": "AngularProject",
-      "ContentRoot": "C:\\Users\\pct152\\source\\repos\\AngularProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pct152\\Desktop\\E-Commerce\\AngularProject\\wwwroot\\",
       "BasePath": "_content/AngularProject",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\pct152\\source\\repos\\AngularProject\\wwwroot\\EmailTemplates\\RegisterEmail.html",
+      "Identity": "C:\\Users\\pct152\\Desktop\\E-Commerce\\AngularProject\\wwwroot\\EmailTemplates\\RegisterEmail.html",
       "SourceId": "AngularProject",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\pct152\\source\\repos\\AngularProject\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\pct152\\Desktop\\E-Commerce\\AngularProject\\wwwroot\\",
       "BasePath": "_content/AngularProject",
       "RelativePath": "EmailTemplates/RegisterEmail.html",
       "AssetKind": "All",
